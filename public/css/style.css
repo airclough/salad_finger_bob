@@ -108,8 +108,21 @@ img {
 
 .container {
   display: none;
+  width: 768px;
 }
 
 .app.content-view .container {
   display: block;
+}
+
+.container > div {
+  width: 100%;
+}
+
+/**
+ * image view
+ */
+
+.image img {
+  width: 100%;
 }

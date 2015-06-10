@@ -15,17 +15,17 @@ define(
         return this;
       },
 
-      _onHashChange: function() {
-        this._render();
+      _onHashChange: function( step ) {
+        this._render( step );
       },
 
-      _render: function() {
-        this.$el.html( this._template() );
+      _render: function( step ) {
+        this.$el.html( this[ '_' + step.name + 'Template' ]( step.img ) );
         return this;
       },
 
-      _template: function() {
-        return '';
+      _aboutTemplate: function( img ) {
+        return '<img src="img/' + img + '">';
       }
     };
   }
