@@ -1,11 +1,12 @@
 define(
-  [ 'views/jumbotron',
+  [ 'jquery',
+    'views/jumbotron',
     'views/banner',
     'views/progress',
     'views/image',
     'views/content',
     'views/footer' ],
-  function( jumbotronView, bannerView, progressView, imageView,
+  function( $, jumbotronView, bannerView, progressView, imageView,
     contentView, footerView ) {
     'use strict';
 
@@ -47,7 +48,7 @@ define(
         subview.footer = footerView;
 
         for( prop in subviews )
-          subviews[ prop ].init( $( '.' + prop ) );
+          subviews[ prop ].init( this.$el.find( '.' + prop ) );
 
         return this;
       },
