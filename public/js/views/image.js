@@ -1,6 +1,6 @@
 define(
-  [],
-  function() {
+  [ 'events' ],
+  function( events ) {
     'use strict';
 
     return {
@@ -17,7 +17,7 @@ define(
 
       _onHashChange: function() {
         this._render();
-      }
+      },
 
       _render: function() {
         this.$el.html( this._template() );

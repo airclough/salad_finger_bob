@@ -1,12 +1,13 @@
 define(
   [ 'jquery',
+    'events',
     'views/jumbotron',
     'views/banner',
     'views/progress',
     'views/image',
     'views/content',
     'views/footer' ],
-  function( $, jumbotronView, bannerView, progressView, imageView,
+  function( $, events, jumbotronView, bannerView, progressView, imageView,
     contentView, footerView ) {
     'use strict';
 
@@ -45,7 +46,7 @@ define(
         subviews.progress = progressView;
         subviews.image = imageView;
         subviews.content = contentView;
-        subview.footer = footerView;
+        subviews.footer = footerView;
 
         for( prop in subviews )
           subviews[ prop ].init( this.$el.find( '.' + prop ) );

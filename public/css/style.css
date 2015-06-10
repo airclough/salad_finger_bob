@@ -74,16 +74,25 @@ img {
 .jumbotron {
   height: inherit;
   width: inherit;
+  padding: 4%;
   background-image: url(/img/salad-fingers.png);
   background-size: cover;
   background-position: 50%;
 }
 
-.jumbotron h1 {
+.jumbotron h2 {
   font-size: 3em;
   font-weight: 300;
+  text-transform: uppercase;
 }
 
-.jumbotron h1 span {
+.jumbotron h1 {
+  font-size: 4em;
   font-weight: 800;
+  text-transform: uppercase;
+}
+
+.jumbotron a.next {
+  color: #8d0000;
+  text-decoration: underline;
 }

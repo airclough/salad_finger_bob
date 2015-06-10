@@ -1,13 +1,14 @@
 define(
-  [],
-  function() {
+  [ 'events' ],
+  function( events ) {
     'use strict';
 
     return {
       init: function( $el ) {
         this.$el = $el;
 
-        this._render();
+        this._render()
+          ._attachEventListeners();
       },
 
       _render: function() {
@@ -17,8 +18,18 @@ define(
 
       _template: function() {
         return ''
-          + '<h1>call me <span>Salad Finger Bob</span></h1>'
-          + '<div class="btn-next">next</div>';
+          + '<h2>call me</h2>'
+          + '<h1>Salad Finger Bob</span></h1>'
+          + '<a href="#" class="next">next</a>';
+      },
+
+      _attachEventListeners: function() {
+        this.$el.find( 'a.next' ).on( 'click', function( e ) {
+          e.preventDefault();
+
+          events.trigger( 'router:navigate', 1 );
+          return false;
+        });
       }
     };
   }
