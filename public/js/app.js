@@ -1,8 +1,9 @@
 define(
   [ 'jquery',
     'events',
-    'router' ],
-  function( $, events, Router ) {
+    'router',
+    'views/app' ],
+  function( $, events, Router, appView ) {
     'use strict';
 
     var controller = {
@@ -16,12 +17,14 @@ define(
       },
 
       _subscribe: function() {
-        events.on( 'router:navigate', this._triggerNavigate, this );
+        events.on( 'router:state', this._routerState, this );
+        // events.trigger( 'router:navigate', 0 );
         return this;
       },
 
-      _triggerNavigate: function( view ) {
+      _routerState: function( view ) {
         console.log( view );
+        events.trigger( 'hashChange', view );
       }
     };
 

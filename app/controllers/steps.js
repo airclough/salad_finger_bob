@@ -1,7 +1,13 @@
 'use strict';
 
 var read = function( req, res ) {
-  var steps = [];
+  var steps = [
+    {
+      http: {
+        url_hash: 'yo'
+      }
+    }
+  ];
 
   res.json( steps );
 };
