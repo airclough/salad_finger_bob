@@ -120,7 +120,23 @@ define(
           + '<ul class="agility">'
             + '<li>Diet</li>'
             + '<li>Skin</li>'
-            + '<li>Muscle</li>'
+            + '<li>Explosive Lean Muscle</li>'
+          + '</ul>'
+          + '<div class="next" data-index="6">next</div>';
+      },
+
+      _fmTemplate: function() {
+        return ''
+          + '<div class="content-header">'
+            + '<img src="img/salad-head.png">'
+            + '<h2>Current</h2>'
+          + '</div>'
+          + '<h2>FM Library / HealthPass Survey</h2>'
+          + '<ul class="agility">'
+            + '<li>Architecting FM</li>'
+            + '<li>MVC</li>'
+            + '<li>Interface/API</li>'
+            + '<li>Survey</li>'
           + '</ul>'
           + '<div class="next" data-index="6">next</div>';
       }

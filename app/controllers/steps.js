@@ -47,6 +47,14 @@ var read = function( req, res ) {
         url_hash: 'inventis'
       },
       img: 'github.png'
+    },
+
+    {
+      name: 'fm',
+      http: {
+        url_hash: 'fm'
+      },
+      img: 'fm.png'
     }
   ];
 
