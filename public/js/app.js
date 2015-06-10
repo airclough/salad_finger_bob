@@ -1,7 +1,8 @@
 define(
-  [ 'events',
+  [ 'jquery',
+    'events',
     'router' ],
-  function( events, Router ) {
+  function( $, events, Router ) {
     'use strict';
 
     var controller = {
@@ -11,7 +12,7 @@ define(
         this.appView = appView;
 
         this._subscribe()
-        this.appView.init();
+        this.appView.init( $( '.app' ) );
       },
 
       _subscribe: function() {
@@ -32,7 +33,7 @@ define(
       _getSteps: function() {
         var that = this;
         var req = $.ajax({
-          url     : url,
+          url     : '/api/steps',
           type    : 'GET',
           dataType: 'json'
         });
