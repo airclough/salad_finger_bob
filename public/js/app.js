@@ -1,12 +1,12 @@
 define(
   [ 'events',
     'router' ],
-  function() {
+  function( events, Router ) {
     'use strict';
 
     return {
       init: function() {
-        console.log( 'init' );
+        console.log( events, Router );
       }
     };
   }
