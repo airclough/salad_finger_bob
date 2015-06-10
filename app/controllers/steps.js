@@ -4,7 +4,14 @@ var read = function( req, res ) {
   var steps = [
     {
       http: {
-        url_hash: 'yo'
+        url_hash: ''
+      }
+    },
+
+    {
+      http: {
+        url_hash: 'about',
+        img: 'ghostbusters.png'
       }
     }
   ];

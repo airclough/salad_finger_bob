@@ -59,8 +59,8 @@ define(
         return this;
       },
 
-      _onHashChange: function() {
-        //
+      _onHashChange: function( step ) {
+        this.$el.toggleClass( 'content-view', 0 !== step.index );
       }
     };
   }

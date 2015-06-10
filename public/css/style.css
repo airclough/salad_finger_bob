@@ -80,6 +80,10 @@ img {
   background-position: 50%;
 }
 
+.app.content-view .jumbotron {
+  display: none;
+}
+
 .jumbotron h2 {
   font-size: 3em;
   font-weight: 300;
@@ -94,5 +98,18 @@ img {
 
 .jumbotron a.next {
   color: #8d0000;
+  font-weight: 300;
   text-decoration: underline;
+}
+
+/**
+ * container
+ */
+
+.container {
+  display: none;
+}
+
+.app.content-view .container {
+  display: block;
 }

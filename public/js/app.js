@@ -8,12 +8,28 @@ define(
 
     var controller = {
       init: function( steps ) {
-        this.steps = steps;
-        this.router = new Router( {}, this.steps );
+        this.router = new Router( {}, steps );
         this.appView = appView;
 
-        this._subscribe()
         this.appView.init( $( '.app' ) );
+
+        this._eachStep( steps )
+          ._subscribe();
+      },
+
+      _eachStep: function( steps ) {
+        this.steps = [];
+        var i = 0;
+        var l = steps.length;
+        var step;
+
+        for ( ; i < l; i++ ) {
+          step = steps[ i ];
+          step.index = i;
+          this.steps.push( step );
+        }
+
+        return this;
       },
 
       _subscribe: function() {
@@ -22,9 +38,9 @@ define(
         return this;
       },
 
-      _routerState: function( view ) {
-        console.log( view );
-        events.trigger( 'hashChange', view );
+      _routerState: function( step ) {
+        console.log( step, this.steps );
+        events.trigger( 'hashChange', this.steps[ step ] );
       }
     };
 
