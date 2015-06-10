@@ -1,0 +1,11 @@
+{
+  "name": "salad_finger_bob",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "modernizr": "~2.8.3",
+    "normalize.css": "~3.0.3",
+    "requirejs": "~2.1.17"
+  }
+}
