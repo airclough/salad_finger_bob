@@ -20,11 +20,11 @@ define(
       },
 
       _render: function( step ) {
-        this.$el.html( this[ '_' + step.name + 'Template' ]( step.img ) );
+        this.$el.html( this._template( step.img ) );
         return this;
       },
 
-      _aboutTemplate: function( img ) {
+      _template: function( img ) {
         return '<img src="img/' + img + '">';
       }
     };

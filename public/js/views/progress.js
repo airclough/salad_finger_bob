@@ -25,7 +25,7 @@ define(
       },
 
       _template: function() {
-        return '';
+        return '<div class="bar"></div>';
       }
     };
   }

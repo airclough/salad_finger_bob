@@ -23,6 +23,14 @@ var read = function( req, res ) {
         url_hash: 'more'
       },
       img: 'tz.png'
+    },
+
+    {
+      name: 'nest',
+      http: {
+        url_hash: 'nest'
+      },
+      img: 'nest.png'
     }
   ];
 

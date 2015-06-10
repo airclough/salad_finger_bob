@@ -91,6 +91,7 @@ img {
 }
 
 .jumbotron h1 {
+  margin-bottom: 16px;
   font-size: 4em;
   font-weight: 800;
   text-transform: uppercase;
@@ -108,7 +109,8 @@ img {
 
 .container {
   display: none;
-  width: 768px;
+  width: 640px;
+  margin: 16px auto;
 }
 
 .app.content-view .container {
@@ -120,9 +122,99 @@ img {
 }
 
 /**
+ * banner view
+ */
+
+.banner {
+  height: 80px;
+  margin-bottom: 16px;
+  background: #D6E3EB;
+}
+
+/**
+ * progress view
+ */
+
+.progress {
+  height: 48px;
+  margin-bottom: 16px;
+}
+
+.progress .bar {
+  height: inherit;
+  width: 100%;
+  background: #859556;
+}
+
+/**
  * image view
  */
 
+.image {
+  margin-bottom: 32px;
+}
+
 .image img {
   width: 100%;
+}
+
+/**
+ * content view
+ */
+
+.content .content-header {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.content .content-header img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: 32px;
+}
+
+.content .content-header h2 {
+  padding: 8px 8px 8px 48px;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.content ul {
+  margin-bottom: 32px;
+}
+
+.content ul li {
+  margin-bottom: 16px;
+}
+
+.content ul li label {
+  display: block;
+  color: #999999;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.content ul li div {
+  font-size: 1.25em;
+  font-weight: 800;
+}
+
+/**
+ * next button
+ */
+.next {
+  display: inline-block;
+  padding: 16px 24px;
+  color: #FFFFFF;
+  background: #8d0000;
+  border: 1px solid #730000;
+  border-radius: 4px;
+}
+
+.next:hover {
+  cursor: pointer;
+  background: #7F0000;
 }

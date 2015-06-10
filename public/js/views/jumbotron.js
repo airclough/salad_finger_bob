@@ -20,11 +20,11 @@ define(
         return ''
           + '<h2>call me</h2>'
           + '<h1>Salad Finger Bob</span></h1>'
-          + '<a href="#" class="next">next</a>';
+          + '<div class="next">next</div>';
       },
 
       _attachEventListeners: function() {
-        this.$el.find( 'a.next' ).on( 'click', function( e ) {
+        this.$el.find( '.next' ).on( 'click', function( e ) {
           e.preventDefault();
 
           events.trigger( 'router:navigate', 1 );
