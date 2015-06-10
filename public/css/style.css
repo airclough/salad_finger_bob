@@ -22,6 +22,7 @@ body {
 
 h1,
 h2,
+h3,
 p,
 ul,
 li {
@@ -133,6 +134,7 @@ img {
 }
 
 .banner h2 {
+  margin-bottom: 8px;
   font-size: 2em;
   font-weight: 300;
   text-transform: uppercase;
@@ -150,11 +152,12 @@ img {
 .progress {
   height: 48px;
   margin-bottom: 16px;
+  background: #E5E5E5;
 }
 
 .progress .bar {
   height: inherit;
-  width: 100%;
+  width: 0%;
   background: #859556;
 }
 

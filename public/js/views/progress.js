@@ -4,19 +4,12 @@ define(
     'use strict';
 
     return {
-      init: function( $el ) {
+      init: function( $el, l ) {
         this.$el = $el;
+        this.l = l;
 
-        this._subscribe();
-      },
-
-      _subscribe: function() {
-        events.on( 'hashChange', this._onHashChange, this );
-        return this;
-      },
-
-      _onHashChange: function() {
-        this._render();
+        this._render()
+          ._subscribe();
       },
 
       _render: function() {
@@ -26,6 +19,16 @@ define(
 
       _template: function() {
         return '<div class="bar"></div>';
+      },
+
+      _subscribe: function() {
+        events.on( 'hashChange', this._onHashChange, this );
+        return this;
+      },
+
+      _onHashChange: function( step ) {
+        ( this.$bar = this.$bar || this.$el.find( '.bar' ) )
+          .css( 'width', ( step.index + 1 )  / this.l * 100 + '%' );
       }
     };
   }

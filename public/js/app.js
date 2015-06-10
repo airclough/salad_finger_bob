@@ -11,7 +11,7 @@ define(
         this.router = new Router( {}, steps );
         this.appView = appView;
 
-        this.appView.init( $( '.app' ) );
+        this.appView.init( $( '.app' ), steps.length );
 
         this._eachStep( steps )
           ._subscribe();
@@ -39,7 +39,6 @@ define(
       },
 
       _routerState: function( step ) {
-        console.log( step, this.steps );
         events.trigger( 'hashChange', this.steps[ step ] );
       }
     };

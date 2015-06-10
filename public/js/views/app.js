@@ -12,8 +12,9 @@ define(
     'use strict';
 
     return {
-      init: function( $el ) {
+      init: function( $el, l ) {
         this.$el = $el;
+        this.l = l;
 
         this._render()
           ._createSubviews()
@@ -49,7 +50,7 @@ define(
         subviews.footer = footerView;
 
         for( prop in subviews )
-          subviews[ prop ].init( this.$el.find( '.' + prop ) );
+          subviews[ prop ].init( this.$el.find( '.' + prop ), this.l );
 
         return this;
       },
