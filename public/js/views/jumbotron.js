@@ -27,6 +27,14 @@ define(
         this.$el.find( '.next' ).on( 'click', function( e ) {
           e.preventDefault();
 
+          $( '<audio>' )
+            .attr( 'src', 'media/spoons.mp3' )
+            .prop( 'autoplay', true )
+            .css( 'position', 'absolute' )
+            .css( 'top', '-100%' )
+            .css( 'opacity', 0 )
+            .appendTo( '.app' );
+
           events.trigger( 'router:navigate', 1 );
           return false;
         });
