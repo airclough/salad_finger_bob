@@ -55,6 +55,22 @@ var read = function( req, res ) {
         url_hash: 'fm'
       },
       img: 'fm.png'
+    },
+
+    {
+      name: 'future',
+      http: {
+        url_hash: 'future'
+      },
+      img: 'future.png'
+    },
+
+    {
+      name: 'martis',
+      http: {
+        url_hash: 'martis'
+      },
+      img: 'martis.png'
     }
   ];
 

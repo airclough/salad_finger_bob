@@ -116,7 +116,7 @@ define(
             + '<img src="img/salad-head.png">'
             + '<h2>Angelrush Beginnings</h2>'
           + '</div>'
-          + '<h2>Inventis</h2>'
+          + '<h3>Inventis</h3>'
           + '<ul class="agility">'
             + '<li>Diet campaigns</li>'
             + '<li>Skin campaigns</li>'
@@ -131,15 +131,42 @@ define(
             + '<img src="img/salad-head.png">'
             + '<h2>Currently at Angelrush</h2>'
           + '</div>'
-          + '<h2>FM Library / HealthPass Survey</h2>'
+          + '<h3>FM Library / HealthPass Survey</h3>'
           + '<ul class="agility">'
             + '<li>Architecting FM Library</li>'
-            + '<li>Interface w/ internal/external APIs</li>'
-            + '<li>MVC</li>'
-            + '<li>Survey</li>'
+            + '<li>Interfacing w/ internal and external APIs</li>'
+            + '<li>MVC*</li>'
+            + '<li>Survey versioning</li>'
+            + '<li>Build system</li>'
           + '</ul>'
-          + '<div class="next" data-index="6">next</div>';
-      }
+          + '<div class="next" data-index="7">next</div>';
+      },
+
+      _futureTemplate: function() {
+        return ''
+          + '<div class="content-header">'
+            + '<img src="img/salad-head.png">'
+            + '<h2>Future at Angelrush</h2>'
+          + '</div>'
+          + '<h3>FM Library / HealthPass Survey</h3>'
+          + '<ul class="agility">'
+            + '<li>Scalable more robust MVC*</li>'
+            + '<li>Smarter more dynamic survey</li>'
+            + '<li>UI controlled path creation</li>'
+            + '<li>Rumormill</li>'
+            + '<li>Good times on the reg</li>'
+            + '<li>Yachts on the reg</li>'
+          + '</ul>'
+          + '<div class="next" data-index="8">next</div>';
+      },
+
+      _martisTemplate: function() {
+        return ''
+          + '<div class="content-header">'
+            + '<img src="img/salad-head.png">'
+            + '<h2>see ya in martis</h2>'
+          + '</div>';
+      },
     };
   }
 );

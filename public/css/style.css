@@ -194,8 +194,10 @@ img {
   text-transform: uppercase;
 }
 
-.content h2 {
+.content > h2 {
   margin-bottom: 16px;
+  font-size: 1.5em;
+  font-weight: 800;
 }
 
 .content ul {
