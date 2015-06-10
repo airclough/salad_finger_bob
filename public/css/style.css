@@ -66,3 +66,24 @@ img {
   height: inherit;
   width: inherit;
 }
+
+/**
+ * jumbotron view
+ */
+
+.jumbotron {
+  height: inherit;
+  width: inherit;
+  background-image: url(/img/salad-fingers.png);
+  background-size: cover;
+  background-position: 50%;
+}
+
+.jumbotron h1 {
+  font-size: 3em;
+  font-weight: 300;
+}
+
+.jumbotron h1 span {
+  font-weight: 800;
+}

@@ -7,8 +7,17 @@ define(
       init: function( $el ) {
         this.$el = $el;
 
-        this._render();
+        this._subscribe();
       },
+
+      _subscribe: function() {
+        events.on( 'hashChange', this._onHashChange, this );
+        return this;
+      },
+
+      _onHashChange: function() {
+        this._render();
+      }
 
       _render: function() {
         this.$el.html( this._template() );
@@ -16,9 +25,7 @@ define(
       },
 
       _template: function() {
-        return ''
-          + '<h1>call me <span>Salad Finger Bob</span></h1>'
-          + '<div class="btn-next">next</div>';
+        return '';
       }
     };
   }
