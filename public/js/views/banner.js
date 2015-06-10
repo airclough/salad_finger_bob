@@ -16,7 +16,9 @@ define(
       },
 
       _template: function() {
-        return '';
+        return ''
+          + '<h2>salad bar open for business</h2>'
+          + '<h3>only available for a limited time</h3>';
       }
     };
   }
