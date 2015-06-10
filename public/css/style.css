@@ -182,12 +182,29 @@ img {
   text-transform: uppercase;
 }
 
+.content h2 {
+  margin-bottom: 16px;
+}
+
 .content ul {
   margin-bottom: 32px;
 }
 
 .content ul li {
   margin-bottom: 16px;
+}
+
+.content ul.agility {
+  padding-left: 32px;
+}
+
+.content ul.agility li {
+  list-style: disc;
+}
+
+.content ul.agility li span {
+  font-size: .75em;
+  font-style: italic;
 }
 
 .content ul li label {

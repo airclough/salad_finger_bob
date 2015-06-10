@@ -71,7 +71,15 @@ define(
             + '</li>'
             + '<li>'
               + '<label>after school activities:</label>'
-              + '<div>Model rocket club</div>'
+              + '<div>Model Rocket Club</div>'
+            + '</li>'
+            + '<li>'
+              + '<label>interests:</label>'
+              + '<div>Yanks, Giants (NY), girls.</div>'
+            + '</li>'
+            + '<li>'
+              + '<label>fun fact:</label>'
+              + '<div>You can find me on Netflix (The Black Donnellys).</div>'
             + '</li>'
           + '</ul>'
           + '<div class="next" data-index="3">next</div>';
@@ -83,7 +91,38 @@ define(
             + '<img src="img/salad-head.png">'
             + '<h2>the crows nest</h2>'
           + '</div>'
-          + '<div class="next" data-index="3">next</div>';
+          + '<div class="next" data-index="4">next</div>';
+      },
+
+      _agilityTemplate: function() {
+        return ''
+          + '<div class="content-header">'
+            + '<img src="img/salad-head.png">'
+            + '<h2>agile programming</h2>'
+          + '</div>'
+          + '<ul class="agility">'
+            + '<li>Many projects <span>(Inventis, HealthRight)</span></li>'
+            + '<li>Many technologies <span>(Grunt, Bower, RequireJS, NodeJS)</span></li>'
+            + '<li>Many languages <span>(Javascript, Ruby, PHP)</span></li>'
+            + '<li>Consuming APIs</li>'
+            + '<li>Querying Doms</li>'
+          + '</ul>'
+          + '<div class="next" data-index="5">next</div>';
+      },
+
+      _inventisTemplate: function() {
+        return ''
+          + '<div class="content-header">'
+            + '<img src="img/salad-head.png">'
+            + '<h2>Beginnings</h2>'
+          + '</div>'
+          + '<h2>Inventis</h2>'
+          + '<ul class="agility">'
+            + '<li>Diet</li>'
+            + '<li>Skin</li>'
+            + '<li>Muscle</li>'
+          + '</ul>'
+          + '<div class="next" data-index="6">next</div>';
       }
     };
   }

@@ -31,6 +31,22 @@ var read = function( req, res ) {
         url_hash: 'nest'
       },
       img: 'nest.png'
+    },
+
+    {
+      name: 'agility',
+      http: {
+        url_hash: 'agility'
+      },
+      img: 'agility-bob.gif'
+    },
+
+    {
+      name: 'inventis',
+      http: {
+        url_hash: 'inventis'
+      },
+      img: 'github.png'
     }
   ];
 
